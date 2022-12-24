@@ -1,0 +1,476 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5E13A0A-C987-4721-B3CF-11F70E468798}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EmployeEvaluation</RootNamespace>
+    <AssemblyName>EmployeEvaluation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Add Evaluator.aspx" />
+    <Content Include="Add-Employee.aspx" />
+    <Content Include="adddepartment.aspx" />
+    <Content Include="AddDesignation.aspx" />
+    <Content Include="Admin-Dashboard.aspx" />
+    <Content Include="AllRoles.aspx" />
+    <Content Include="Approve-Decline.aspx" />
+    <Content Include="Approve.aspx" />
+    <Content Include="Awards-Rewards.aspx" />
+    <Content Include="calender1.png" />
+    <Content Include="demoappro.aspx" />
+    <Content Include="Edit-Designation.aspx" />
+    <Content Include="EditEmployee.aspx" />
+    <Content Include="EditRole.aspx" />
+    <Content Include="EmpAwards.aspx" />
+    <Content Include="EmployeeDashboard.aspx" />
+    <Content Include="EmpReport.aspx" />
+    <Content Include="EvaluateEmployee.aspx" />
+    <Content Include="EvaluationHistory%28Admin%29.aspx" />
+    <Content Include="EvalutorDashboard.aspx" />
+    <Content Include="fontawesome-all.js" />
+    <Content Include="Home.aspx" />
+    <Content Include="LICENSE.txt" />
+    <Content Include="Login.aspx" />
+    <Content Include="Manage Evaluator.aspx" />
+    <Content Include="DemoAdd-Employee.aspx" />
+    <Content Include="Manage-criteria.aspx" />
+    <Content Include="Manage-Department.aspx" />
+    <Content Include="Manage-Designation.aspx" />
+    <Content Include="Manage-Employee.aspx" />
+    <Content Include="Manage-Evaluation-list.aspx" />
+    <Content Include="Remove_Evaluator.aspx" />
+    <Content Include="Add-criteria.aspx" />
+    <Content Include="ResetPassword.aspx" />
+    <Content Include="roboto-font.css" />
+    <Content Include="SeeEvaluationHistory.aspx" />
+    <Content Include="Sidebar-Master.css" />
+    <Content Include="Style-dashboard.css" />
+    <Content Include="style.css" />
+    <Content Include="User List.aspx" />
+    <Content Include="ViewReport%28Admin%29.aspx" />
+    <Content Include="ViewReports.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Evaluator.aspx.cs">
+      <DependentUpon>Add Evaluator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add Evaluator.aspx.designer.cs">
+      <DependentUpon>Add Evaluator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add-Employee.aspx.cs">
+      <DependentUpon>Add-Employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add-Employee.aspx.designer.cs">
+      <DependentUpon>Add-Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adddepartment.aspx.cs">
+      <DependentUpon>adddepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adddepartment.aspx.designer.cs">
+      <DependentUpon>adddepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddDesignation.aspx.cs">
+      <DependentUpon>AddDesignation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddDesignation.aspx.designer.cs">
+      <DependentUpon>AddDesignation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin-Dashboard.aspx.cs">
+      <DependentUpon>Admin-Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin-Dashboard.aspx.designer.cs">
+      <DependentUpon>Admin-Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllRoles.aspx.cs">
+      <DependentUpon>AllRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllRoles.aspx.designer.cs">
+      <DependentUpon>AllRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approve-Decline.aspx.cs">
+      <DependentUpon>Approve-Decline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approve-Decline.aspx.designer.cs">
+      <DependentUpon>Approve-Decline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approve.aspx.cs">
+      <DependentUpon>Approve.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approve.aspx.designer.cs">
+      <DependentUpon>Approve.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Awards-Rewards.aspx.cs">
+      <DependentUpon>Awards-Rewards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Awards-Rewards.aspx.designer.cs">
+      <DependentUpon>Awards-Rewards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoappro.aspx.cs">
+      <DependentUpon>demoappro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demoappro.aspx.designer.cs">
+      <DependentUpon>demoappro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit-Designation.aspx.cs">
+      <DependentUpon>Edit-Designation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit-Designation.aspx.designer.cs">
+      <DependentUpon>Edit-Designation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditEmployee.aspx.cs">
+      <DependentUpon>EditEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditEmployee.aspx.designer.cs">
+      <DependentUpon>EditEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditRole.aspx.cs">
+      <DependentUpon>EditRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditRole.aspx.designer.cs">
+      <DependentUpon>EditRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpAwards.aspx.cs">
+      <DependentUpon>EmpAwards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpAwards.aspx.designer.cs">
+      <DependentUpon>EmpAwards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDashboard.aspx.cs">
+      <DependentUpon>EmployeeDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeDashboard.aspx.designer.cs">
+      <DependentUpon>EmployeeDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMaster.Master.cs">
+      <DependentUpon>EmployeeMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeMaster.Master.designer.cs">
+      <DependentUpon>EmployeeMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EmpReport.aspx.cs">
+      <DependentUpon>EmpReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpReport.aspx.designer.cs">
+      <DependentUpon>EmpReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EvaluateEmployee.aspx.cs">
+      <DependentUpon>EvaluateEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EvaluateEmployee.aspx.designer.cs">
+      <DependentUpon>EvaluateEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EvaluationHistory%28Admin%29.aspx.cs">
+      <DependentUpon>EvaluationHistory%28Admin%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EvaluationHistory%28Admin%29.aspx.designer.cs">
+      <DependentUpon>EvaluationHistory%28Admin%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EvaluatorMaster.Master.cs">
+      <DependentUpon>EvaluatorMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EvaluatorMaster.Master.designer.cs">
+      <DependentUpon>EvaluatorMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EvalutorDashboard.aspx.cs">
+      <DependentUpon>EvalutorDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EvalutorDashboard.aspx.designer.cs">
+      <DependentUpon>EvalutorDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainMaster.Master.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMaster.Master.designer.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Evaluator.aspx.cs">
+      <DependentUpon>Manage Evaluator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage Evaluator.aspx.designer.cs">
+      <DependentUpon>Manage Evaluator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DemoAdd-Employee.aspx.cs">
+      <DependentUpon>DemoAdd-Employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DemoAdd-Employee.aspx.designer.cs">
+      <DependentUpon>DemoAdd-Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage-criteria.aspx.cs">
+      <DependentUpon>Manage-criteria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage-criteria.aspx.designer.cs">
+      <DependentUpon>Manage-criteria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage-Department.aspx.cs">
+      <DependentUpon>Manage-Department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage-Department.aspx.designer.cs">
+      <DependentUpon>Manage-Department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage-Designation.aspx.cs">
+      <DependentUpon>Manage-Designation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage-Designation.aspx.designer.cs">
+      <DependentUpon>Manage-Designation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage-Employee.aspx.cs">
+      <DependentUpon>Manage-Employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage-Employee.aspx.designer.cs">
+      <DependentUpon>Manage-Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage-Evaluation-list.aspx.cs">
+      <DependentUpon>Manage-Evaluation-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage-Evaluation-list.aspx.designer.cs">
+      <DependentUpon>Manage-Evaluation-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Remove_Evaluator.aspx.cs">
+      <DependentUpon>Remove_Evaluator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Remove_Evaluator.aspx.designer.cs">
+      <DependentUpon>Remove_Evaluator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add-criteria.aspx.cs">
+      <DependentUpon>Add-criteria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add-criteria.aspx.designer.cs">
+      <DependentUpon>Add-criteria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SeeEvaluationHistory.aspx.cs">
+      <DependentUpon>SeeEvaluationHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SeeEvaluationHistory.aspx.designer.cs">
+      <DependentUpon>SeeEvaluationHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sidebar-Master.Master.cs">
+      <DependentUpon>Sidebar-Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sidebar-Master.Master.designer.cs">
+      <DependentUpon>Sidebar-Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User List.aspx.cs">
+      <DependentUpon>User List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User List.aspx.designer.cs">
+      <DependentUpon>User List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReport%28Admin%29.aspx.cs">
+      <DependentUpon>ViewReport%28Admin%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewReport%28Admin%29.aspx.designer.cs">
+      <DependentUpon>ViewReport%28Admin%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReports.aspx.cs">
+      <DependentUpon>ViewReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewReports.aspx.designer.cs">
+      <DependentUpon>ViewReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EvaluatorMaster.Master" />
+    <Content Include="EmployeeMaster.Master" />
+    <Content Include="MainMaster.Master" />
+    <None Include="packages.config" />
+    <Content Include="Roboto-Black.ttf" />
+    <Content Include="Roboto-BlackItalic.ttf" />
+    <Content Include="Roboto-Bold.ttf" />
+    <Content Include="Roboto-BoldItalic.ttf" />
+    <Content Include="Roboto-Italic.ttf" />
+    <Content Include="Roboto-Light.ttf" />
+    <Content Include="Roboto-LightItalic.ttf" />
+    <Content Include="Roboto-Medium.ttf" />
+    <Content Include="Roboto-MediumItalic.ttf" />
+    <Content Include="Roboto-Regular.ttf" />
+    <Content Include="Roboto-Thin.ttf" />
+    <Content Include="Roboto-ThinItalic.ttf" />
+    <Content Include="Sidebar-Master.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56023</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56023/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

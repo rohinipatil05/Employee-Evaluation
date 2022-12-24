@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Sidebar-Master.master.cs" Inherits="EmployeEvaluation.Sidebar_Master" %>
+
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>  </title>
+    <link rel="stylesheet" href="Sidebar-Master.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+   <body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">Employee Evaluation</span>
+    </div>
+    <ul class="nav-links">
+
+        <li>
+        <a href="Admin-Dashboard.aspx" >
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+       <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Dashboard</a></li>
+        </ul>
+      </li>
+
+    <li>
+        <a href="EvaluationHistory(Admin).aspx" >
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Evaluation History</span>
+        </a>
+       <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Evaluation History</a></li>
+        </ul>
+      </li>
+      
+       <%--<li>
+        <a href="EvaluateEmployee.aspx">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Evaluate Employee</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Evaluate Employee</a></li>
+        </ul>
+      </li>--%>
+
+        <li>
+        <a href="Approve-Decline.aspx">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Approve-Decline</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Approve-Decline</a></li>
+        </ul>
+      </li>
+     <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Manage</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Manage</a></li>
+          <li><a href="Manage-Employee.aspx"> Employee</a></li>
+          <li><a href="Manage Evaluator.aspx "> Evaluator</a></li>
+          <li><a href="Manage-criteria.aspx"> Criteria</a></li>
+        
+         <li><a href="Manage-Department.aspx"> Department</a></li>
+        
+             <li><a href="Manage-Designation.aspx"> Designation</a></li>
+        
+        
+        </ul>
+      </li>
+      <li>
+        <a href="ViewReport(Admin).aspx">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">View Reports</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">View Reports</a></li>
+        </ul>
+      </li>
+        
+      <li>
+        <a href="Home.aspx">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Logout</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Logout</a></li>
+        </ul>
+      </li>
+</ul>
+
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text"></span>
+    </div>
+  </section>
+       
+      
+  
+    <script>
+  let arrow = document.querySelectorAll(".arrow");
+for (var i = 0; i < arrow.length; i++) {
+  arrow[i].addEventListener("click", (e)=>{
+ let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+ arrowParent.classList.toggle("showMenu");
+  });
+}
+
+let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".bx-menu");
+console.log(sidebarBtn);
+sidebarBtn.addEventListener("click", ()=>{
+  sidebar.classList.toggle("close");
+});
+</script>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        
+</body>
+</html>
